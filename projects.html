@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stefan Ilic / Projects</title>
+  <meta name="description" content="Projects by Stefan Ilic — robotic food labs, computer vision systems, and medical device design.">
+  <meta property="og:title" content="Projects — Stefan Ilic">
+  <meta property="og:description" content="Things I've built — from robotic food labs to computer vision systems.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">Stefan Ilic</a>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="papers.html">Papers</a></li>
+        <li><a href="bio.html">Bio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="foodlab" class="project-section project-section--light">
+      <div class="project-section-inner">
+        <h2>Robotic and AI Food Lab</h2>
+        <div class="project-video video-lazy" data-id="kssVwYvXHfM">
+          <img src="https://img.youtube.com/vi/kssVwYvXHfM/maxresdefault.jpg" alt="Robotic Food Lab video" loading="lazy">
+          <button class="video-play" aria-label="Play video"></button>
+        </div>
+        <p class="project-desc">A robotic system that runs lab-scale food science experiments, and AI that learns from them to find optimal formulations. Built for food emulsions like plant-based milks and coffee creamers.</p>
+        <ul class="project-bullets">
+          <li>Fully automated sample preparation from ingredient dosing to cleaning. viscosity, pH, and stability measurements included.</li>
+          <li>Bayesian Optimization pipeline identifies optimal formulations in as few as 20 trials.</li>
+          <li>In active development at EPFL &times; Nestl&eacute; R&amp;D. Building the AI agent that runs the lab and optimizes the beverage autonomously.</li>
+          <li>Built from scratch, 3,000+ part robotic platform with control and automation software.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="cooking" class="project-section project-section--dark">
+      <div class="project-section-inner">
+        <h2>Robotic Cooking and Food Modelling</h2>
+        <div class="project-video video-lazy" data-id="4XDgxYrHkaA">
+          <img src="https://img.youtube.com/vi/4XDgxYrHkaA/maxresdefault.jpg" alt="Robotic Cooking video" loading="lazy">
+          <button class="video-play" aria-label="Play video"></button>
+        </div>
+        <p class="project-desc">A robotic system that autonomously cooks food products while capturing what's happening inside them in real time. The resulting datasets unlock prediction of cooking outcomes for untested formulations using foundation models.</p>
+        <ul class="project-bullets">
+          <li>Cooks, flips, and measures simultaneously: temperature, moisture, electrical conductivity, color, pressing and cutting force</li>
+          <li>Generates large-scale multi-modal datasets across 10+ product types, from plant-based burgers to tofu</li>
+          <li>LLM-based predictive modeling of cooking outcomes, validated on prototype plant-based burgers</li>
+          <li>90% workflow automation, 24 experiments per 8-hour day, 3&times; more than manual</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="emulsion" class="project-section project-section--light">
+      <div class="project-section-inner">
+        <h2>Emulsion Stability using Computer Vision</h2>
+        <div class="project-video video-lazy" data-id="dOtcfziSop8">
+          <img src="https://img.youtube.com/vi/dOtcfziSop8/maxresdefault.jpg" alt="Emulsion Stability video" loading="lazy">
+          <button class="video-play" aria-label="Play video"></button>
+        </div>
+        <p class="project-desc">A robotic system that automates food emulsion stability testing. Performs autonomous titration and applies a proprietary computer vision algorithm to detect instability. Replaces a $120,000 lab instrument and manual visual inspection.</p>
+        <ul class="project-bullets">
+          <li>Proprietary computer vision algorithm monitors up to 10 samples in parallel, continuously and in real time. Previously: 1 sample at a time.</li>
+          <li>No pre-training required. Works on bright, dark, colored, and transparent emulsions. Just works.</li>
+          <li>8&times; more trials per day, 95% less manual work.</li>
+          <li>Deployed and in active use at Nestl&eacute; R&amp;D. Patent pending.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-section project-section--dark">
+      <div class="project-section-inner">
+        <h2>Autonomous Lab Inspection</h2>
+        <div class="project-video video-lazy" data-id="TT8j7UElpP8">
+          <img src="https://img.youtube.com/vi/TT8j7UElpP8/maxresdefault.jpg" alt="Autonomous Lab Inspection video" loading="lazy">
+          <button class="video-play" aria-label="Play video"></button>
+        </div>
+        <p class="project-desc">A robotic lab that autonomously inspects itself before an experiment. Detects failures, checks equipment, and decides whether to proceed using foundation models.</p>
+        <ul class="project-bullets">
+          <li>Analyzes visual and audio data to assess equipment status and provide troubleshooting steps.</li>
+          <li>Detects equipment motion, operational status, and failures using cameras, microphones, and large language models.</li>
+          <li>Distinguishes between critical failures that stop the experiment and minor issues requiring human intervention.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/stefan-ilic-ch" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="mailto:stefan.ilic@epfl.ch" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">Stefan Ilic</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
