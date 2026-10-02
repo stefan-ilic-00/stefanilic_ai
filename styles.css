@@ -230,6 +230,23 @@ main {
   margin-bottom: 6px;
 }
 
+.hero-team {
+  font-size: 0.9em;
+  color: #4F4F4F;
+}
+
+.hero-team a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(107, 107, 107, 0.35);
+  text-underline-offset: 3px;
+}
+
+.hero-team a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
 .hero-affiliation {
   font-family: 'Libre Baskerville', Georgia, serif;
   font-size: 1.1rem;
